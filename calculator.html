@@ -9,7 +9,7 @@
         *{
             margin:0;
             padding: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'fantasy', sans-serif;
             box-sizing: border-box;
         }
         .container{
@@ -21,9 +21,9 @@
             justify-content: center;
         }
         .calculator{
-            background-color: #3a4452;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: #2e486b;
+            padding: 30px;
+            border-radius: 20px;
         }
         .calculator form input{
             border:0;
@@ -41,10 +41,7 @@
         form .display{
             display: flex;
             justify-content: flex-end;
-           /* height: 50px;
-            width:10px;
-            margin-top: 17px;*/
-            margin:20px 0;
+            margin:30px 0;
     
         }
 
@@ -71,7 +68,7 @@
               </div>
               <div>
                   <input type="button" value="AC" onclick="display.value = ' '" class="operator">
-                  <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                  <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
                   <input type="button" value="%" onclick="display.value += '%'" class="operator">
                   <input type="button" value="/" onclick="display.value += '/'" class="operator">
               </div>
